@@ -1,0 +1,22 @@
+
+-import io.github.mlidal.todomvc.model.Todo
+-@ val todos : Todo
+
+html
+    head
+        title Scalatra Todo list
+        link(type="text/css" rel="stylesheet" href={uri("/style")})
+    body
+
+        h1 Hi #{todos.userDetail("full_name")}
+        <img src=#{todos.userDetail("profile_picture")}>
+
+
+
+        table
+            tr
+                <td>#{todos.userDetail("username")}</td>
+                <td>#{todos.userDetail("id")}</td>
+                <td>#{todos.userDetail("bio")}</td>
+                <td>#{todos.userDetail("website")}</td>
+

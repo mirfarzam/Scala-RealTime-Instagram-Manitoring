@@ -1,0 +1,35 @@
+ body{
+    background-color: #4a4849;
+    color : white;
+}
+
+div.row
+{
+	width:100%;
+	max-width:62.5rem;
+	text-align :  center;
+	display :  block;
+	margin: 0px auto;
+}
+
+img.instaPost
+{
+	border:3px white solid;
+	box-shadow : 0px 5px 7px rgba(0,0,0,0.5);
+	display :  inline-block;
+	margin:0px auto;
+	margin-top: 50px;
+	margin-left : 10px;
+	margin-right: 10px;
+	width: 300px;
+	height : 300px;
+	object-fit : cover;
+}
+
+img.profilePic
+{
+	width:100px;
+	height:100px;
+	border : 7px white solid;
+	box-shadow : 0px 7px 7px rgba(0,0,0,0.6);
+}

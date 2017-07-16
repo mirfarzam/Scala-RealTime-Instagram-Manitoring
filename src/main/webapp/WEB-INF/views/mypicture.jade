@@ -1,0 +1,21 @@
+doctype
+
+-import io.github.mlidal.todomvc.model.Todo
+-@ val todos : Todo
+
+
+html( lang="en" )
+    head
+        link(type="text/css" rel="stylesheet" href={uri("/stylesheets/myCss.css")})
+
+
+div.row
+    <img class="profilePic" src=#{todos.userDetail("profile_picture")} >
+    <br>
+    h1  #{todos.userDetail("full_name")}
+    br
+    br
+
+div.row
+    - for (todo <- todos.ListOutput.reverse)
+        <img class="instaPost"  src=#{todo("mediaUrl")}>
